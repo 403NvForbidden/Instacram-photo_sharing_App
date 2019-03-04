@@ -1,0 +1,22 @@
+<html lang="en-Us">
+<head>
+	<meta charset="utf-8">
+	<title>Update profile</title>
+	<link rel="stylesheet" href="../styles/signin.css">
+</head>
+<body>
+	<div id="login">
+		<h1><strong>HEY YOU.</strong>enter your new info!</h1>
+		<form id="update-form">
+			<fieldset>
+                <p><input type="text" required  pattern=".+@.+" id="Email" value="" placeholder="Email"></p>
+                <p><input type="text" required id="Name" value=""  placeholder="Name"></p>
+				<p><input type="password" required id="Password" value=""  placeholder="Password"></p>
+				<p><input type="submit" value="update"></p>
+                <p><a href="/user"><span id='home' onclick="mainPage()" class="btn-round">back</span></a></p>
+			</fieldset>
+		</form>
+    </div> <!-- end login -->
+	<script type="module" src="../src/main.js"></script>
+</body>
+</html>

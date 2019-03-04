@@ -1,0 +1,27 @@
+<html lang="en-Us">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="../styles/signin.css">
+</head>
+<body>
+	<div id="login">
+		<h1><strong>Welcome.</strong> Please login.</h1>
+
+		<form id="login-form" name="login-form" action="javascript:void(0);">
+			<fieldset>
+				<p><input id="username" type="text" required placeholder="Username" value=""></p>
+				<p><input id="password" type="password" required placeholder="Password" value="" ></p>
+				<p><input type="submit" value="Login"></p>
+				<p><a>Doesn't have a account?</a>
+                    <a href="/auth/signup">Register now!</a>
+                </p>
+                <p><a href="/"><span id='home' class="btn-round">home</span> </a></p>
+			</fieldset>
+		</form>
+    </div>
+	<script type="text/javascript">
+	</script>
+	<script type="module" src="../src/main.js"></script>
+</body>
+</html>

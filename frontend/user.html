@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure --> 
+    <header class='banner'>
+            <h1><a href="/"><img id='logo' src="styles/logos/logo2.0.png"></a></h1>
+            <ul class='nav'>
+                <img id='logout' src="styles/logos/logout.png" class="nav-image">
+            </ul>
+    </header>
+
+    <main role='main' id="main">
+        <!-- app goes here --> 
+        <div class="container">
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="styles/logos/user.png" alt="">
+                </div>
+                <div class="profile-user-settings">
+                    <h1 class="profile-user-name" id="profile-user-name" >Name</h1>
+                    <a href="/update_profile"><button class="btn profile-edit-btn">Edit Profile</button></a>
+                    <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+                </div>
+                <div class="profile-stats">
+                    <ul>
+                        <li><span class="profile-stat-count" id="post">999</span> posts</li>
+                        <li><span class="profile-stat-count" id="follower">999</span> followers</li>
+                        <li><span class="profile-stat-count" id="following">999</span> following</li>
+                    </ul>
+                </div>
+                <div class="profile-bio">
+                    <p>name:<span class="profile-real-name" id="realname">Jane Doe</span></p>
+                    <p>emailAddress:<span class="profile-real-name" id="emailAddress">sample@blabla.com</span></p>
+                    <p>📷✈️🏕️<span class="profile-real-name" id="myPost">
+                        <!-- my post added here later  -->
+                    </span></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>Instacram example</p>
+    </footer>
+    <script type="text/javascript">
+        document.getElementById("logout").addEventListener("click",()=> {
+            localStorage.clear();
+            alert("you have logged out");
+            window.location.href = "/";
+        });
+    </script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

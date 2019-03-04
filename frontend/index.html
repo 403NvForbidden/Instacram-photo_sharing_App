@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Instacram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+    
+</head>
+<body>
+    <!-- This is an example app structure --> 
+    <header class='banner'>
+        <h1><a href="/"><img id='logo' src="styles/logos/logo2.0.png"></a></h1>
+        <ul class='nav'>
+            <li class="nav-item"><input type="file" value="file"/></li>
+            <li class="nav-item"><input id="description" type="text" placeholder="your thoughts"/></li>
+            <img id='post' src="styles/logos/post.png" class="nav-image">
+            <img id='login'  class="nav-image" onclick="login()" src="styles/logos/login.png">
+            <img id='logout' src="styles/logos/logout.png" onclick="logout()" class="nav-image">
+        </ul>
+        
+    </header>
+    <main role='main'>
+        <!-- app goes here --> 
+        <div id='large-feed'>
+            <!-- inject feed data -->
+        </div>
+    </main>
+    <footer>
+        <p>Instacram example</p>
+    </footer>
+    <script type="text/javascript">
+        function login() {
+            // if not logged in 
+            console.log(localStorage.getItem("curr_user"));
+            
+            if (window.localStorage.getItem("curr_user") == null) {
+                window.location.href = "/auth/login";
+            } else {
+                // if logged in direct to user main page
+                window.location.href = "/user";
+            }
+        }
+        function logout() {
+            alert("you have logged out");
+            localStorage.clear();
+            window.location.href = "/";
+        }
+    </script>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

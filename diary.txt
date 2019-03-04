@@ -1,0 +1,13 @@
+Date	Start	Stop	Activity	Comments
+15/10	15:00	16:30	reading	    read the spec and watch relative lec recording to figure out requirement of subset
+17/10	20:00	21:30	analysing	trying to understand how the project structure and functionality of each part
+18/10	10:30	15:00	coding      spec is abstract, and misunderstanding, so just started subset 0 and hope I can understand more about the requirement
+20/10	19:00	21:30	coding      realised cannot just do subset 0, since its only interface building. need to start subset 1 for testing functionality
+21/10	9:00	14:00	coding      understand how to use the api for auth/login and auth/signup nad completed subet 0 and 1
+22/10	17:00	23:30	debugging   build the front end for subset 2, and fixed minor bugs in subet 1
+24/10	10:30	14:00	coding      almost completed subset 2, skip the pagination for subset 3 infinite scroll
+25/10	11:30	18:00	debugging   finished all subset 0,1,2 and infinite scroll in subset 3
+26/10	17:00	00:40	coding      started subset 3 trying live load for few hours, give up
+27/10	15:00	01:00	coding      finish half of the subset 3 including user page, comment, follow 
+28/10	10:00	12:00	refactoring/debugging   adding more comments and refactor the structure of code, fixed bugs in infinite scroll
+28/10	19:00	20:00	commenting   adding more comments

@@ -1,0 +1,29 @@
+<html lang="en-Us">
+<head>
+	<meta charset="utf-8">
+	<title>Sign up</title>
+	<link rel="stylesheet" href="../styles/signin.css">
+</head>
+<body>
+	<div id="login">
+		<h1><strong>Welcome.</strong>Sign up to instacram!</h1>
+		<form id="register-form">
+			<fieldset>
+				<p><input type="text" required  pattern=".+@.+" id="Email" value="" placeholder="Email"></p>
+				<p><input type="text" required id="Username" value="" placeholder="Username"></p>
+				<p><input type="password" required id="Password" value=""  placeholder="Password"></p>
+				<p><input type="text" required id="Name" value=""  placeholder="Name"></p>
+				<p><input type="submit" value="Signup"></p>
+                <p><span id='home' onclick="mainPage()" class="btn-round">back</span></p>
+			</fieldset>
+		</form>
+		<!-- <p><span class="btn-round">or</span></p> -->
+    </div> <!-- end login -->
+    <script>
+		function mainPage() {
+			window.location.href = "/auth/signup";
+		}
+	</script>
+	<script type="module" src="../src/main.js"></script>
+</body>
+</html>
