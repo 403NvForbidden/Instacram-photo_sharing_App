@@ -170,3 +170,8 @@ Users can access different pages using URL fragments:
 /#feed
 /#profile=janecitizen
 ```
+![main](https://user-images.githubusercontent.com/37000892/53720889-f1e79700-3eb5-11e9-9026-0690992e4b33.png)
+![register](https://user-images.githubusercontent.com/37000892/53721443-5fe08e00-3eb7-11e9-91fd-15d28dd4a1b6.png)
+![profile](https://user-images.githubusercontent.com/37000892/53721236-cc0ec200-3eb6-11e9-8010-759742b64e29.png)
+![random](https://user-images.githubusercontent.com/37000892/53721259-ddf06500-3eb6-11e9-9f3c-3b8f3d3ba07b.png)
+
